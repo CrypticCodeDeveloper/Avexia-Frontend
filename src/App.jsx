@@ -16,7 +16,7 @@ import SessionProvider from "./contexts/sessionContext";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />}>
-      <Route path="/welcome" element={<WelcomePage />} />
+      <Route index element={<WelcomePage />} />
       <Route path="/doctors" element={<DoctorsPage />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/session" element={<SessionPage />} />
